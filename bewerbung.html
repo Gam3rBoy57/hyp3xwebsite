@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Russak Bewerbung</title>
+<link rel="icon" href="https://cdn.discordapp.com/emojis/720314598745440356.png?v=1" sizes="32x32">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Dies ist das Bewerbungsformular fuer Cypex_Flo Gaming</h2>
+    <p>Bitte schalte deinen AdBlocker aus, da der Antrag sonst nicht abgeschickt werden kann!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://cdn.discordapp.com/attachments/736652625272897656/741935858579669032/Logo.jpg" sizes="32x32" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="https://formspree.io/xjvadwoz" method="POST">
+        <label>Als was willst du dich bewerben?</label>
+        <select name="stelle" id="stelle"> 
+            <option value="auswahl">-- Stelle --</option>
+            <option value="ytmod">Stream Mod YT</option> 
+            <option value="twitchmod">Stream Mod Twitch</option> 
+            <option value="beides">Stream Mod Beides</option></select>
+
+        <label>Wie heisst du auf der Plattform?</label>
+        <input type="text" id="name" name="name" placeholder="Dein Name..">
+
+        <label>Wie alt bist du?</label>
+        <input type="text" id="alter" name="alter" placeholder="Dein Alter..">
+
+        <label>Discord Namen mit Tag</label>
+        <input type="text" id="discord" name="discord" placeholder="z.B: Beispiel#0000">
+
+        <label>Erzaehl uns etwas ueber dich!</label>
+        <textarea name="zusatz" placeholder="Irgendwas.." style="height:170px"></textarea>
+
+        <input type="submit" value="Senden">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
